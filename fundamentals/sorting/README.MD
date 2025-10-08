@@ -2,9 +2,6 @@
 
 # Bubble Sort
 
-This folder contains a simple implementation of the Bubble Sort algorithm in Python.
-
-## Description
 Bubble Sort repeatedly compares adjacent elements and swaps them if they are in the wrong order.  
 It’s simple but inefficient for large datasets.
 
@@ -13,6 +10,16 @@ It’s simple but inefficient for large datasets.
 - **Stable:** Yes
 - **In-place:** Yes
 
-## Example
-Input:  [64, 34, 25, 12, 22, 11, 90]  
-Output: [11, 12, 22, 25, 34, 64, 90]
+<br>
+
+# Merge Sort
+
+Merge Sort is a divide-and-conquer sorting algorithm.
+It works by recursively splitting a list into two halves, sorting each half and then merging the sorted halves back together
+Merge Sort is more efficient than Bubble Sort for larger datasets, but it requires extra memory for the merged sublists
+
+- **Best case:** O(n*logn)
+- **Average/Worst case:** O(n*logn)
+- **Space complexity:** O(n) due to temporary lists used during merging
+- **Stable:** Yes
+- **In-place:** No, the algorithm creates new lists when merging
