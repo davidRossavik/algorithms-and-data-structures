@@ -13,7 +13,7 @@ This file is part of the "fundamentals" section of my Algorithms and Data Struct
 It demonstrates basic algorithmic logic, nested loops, and step-by-step array manipulation. 
 
 Author: David 
-Date: 2025-10-08 
+Date: 08-10-2025 
 """
 
 def bubble_sort(array):
