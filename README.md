@@ -34,13 +34,13 @@ It combines both **theoretical exercises** (like sorting, dynamic programming, a
 
 ---
 
-## 🧰 Languages Used
+## Languages Used
 
 This repository includes implementations mainly in **Python**.
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 Each subproject contains its own `README.md` with:
 
