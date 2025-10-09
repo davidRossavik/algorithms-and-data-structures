@@ -58,3 +58,22 @@ There are two main implementations: <br>
                         (Iterative) O(1)
 - **Stable:** not applicable
 - **In-place:** (Iterative) Yes
+
+<br>
+
+# Quicksort
+
+Quicksort is a divide-and-conquer sorting algorithm.
+The algorithm is often faster in practice than Merge Sort or Insertion Sort, because it works **in-place**, has **low overhead** from extra operations.
+
+The algorithm selects a **pivot** element from the list and partitions the other into two sublist: those less than and those greater than pivot.
+It then recursively sorts the sublist and combines them with the pivot in the middle.
+
+**Randomized Quicksort** is a practical implementation of quicksort, which chooses a pivot randomly. Reducing the likelihood of encountering the worst-case scenario
+
+- **Best case:** O(n*logn) (balanced partitions)
+- **Average case:** O(n*logn)
+- **Wost case:** O(n^2) (when pivot consistently divides poorly)
+- **Space complexity:** O(logn) due to recursive calls
+- **Stable:** No
+- **In-place:** Yes
