@@ -7,7 +7,6 @@ The sorting algorithm is based on the divide-and-conquer-principle.
 There are two implementations of the algorithm:
     - Quick Sort: Main idea 
     - Randomized Quick Sort: Same algorithm, but chooses pivot randomly
-                             This prevents worst-case performance
 
 The main idea:
     1. Pick a pivot element from the list
@@ -16,7 +15,6 @@ The main idea:
     4. Combine the sorted parts and pivot to get sorted list
 
 Time Complexity
-QuickSort:
     - Partitioning: O(n)
     - Recursive left: T(n/2)
     - Recursive right: T(n/2)
@@ -24,7 +22,6 @@ QuickSort:
     - Total: O(n*logn)
 
 Space Complexity:
-QuickSort:
     - Recursive calls: O(logn) - Demands extra call stack frames
     - Worst-case: O(n)
 
