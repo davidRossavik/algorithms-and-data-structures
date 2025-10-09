@@ -40,3 +40,21 @@ It works by recursively splitting a list into two halves, sorting each half and 
 - **In-place:** No, creates new lists when merging
 
 <br>
+
+# Bisect (Binary Search)
+
+Bisect is a divide-and-conquer searching algorithm. 
+It is more effective than just iterating through a list. The iterative version requires no memory.
+
+It finds the position of a value in a sorted list by repeatedly dividing the search interval in half. At each step it compares the target value with the element at midIndex. The process repeats til the value is found or the search interval becomes empty.
+
+There are two main implementations: <br>
+    - Bisect: recursive (calls itself on smaller halves) <br>
+    - Bisect': iterative (uses while-loop and updates indexes in-place)
+
+- **Best case:** O(1) value found on first check
+- **Average/Worst case:** O(logn)
+- **Space complexity:** (Recursive) O(logn) extra call stack frames 
+                        (Iterative) O(1)
+- **Stable:** not applicable
+- **In-place:** (Iterative) Yes

@@ -10,6 +10,7 @@ It combines both **theoretical exercises** (like sorting, dynamic programming, a
 * Strengthen algorithmic thinking and problem-solving skills.
 * Practice writing clean, well-documented, and tested code.
 * Explore how data structures and algorithms are applied in real systems.
+* Limited / No AI use
 
 ---
 
