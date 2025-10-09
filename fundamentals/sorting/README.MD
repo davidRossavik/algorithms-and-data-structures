@@ -87,11 +87,11 @@ Effective for sorting integers when the values are within a limited range 0 to k
 
 The algorithm works by counting how many times each value occurs and then using this count to place each element directly in its correct position. To maintain stabilit, it processes the input array from right to left when placing elements.
 
-Limitations:
-    - if k >> n, the algorithm becomes memory-intensive and inefficient
-        - Example: Sorting 1,000 numbers in range 1-10,000,000 would allocate a huge array C mostly filled with zeros
-    - Only works with integers or discrete values within known range
-Best for:
+Limitations: <br>
+    - if k >> n, the algorithm becomes memory-intensive and inefficient <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -Example: Sorting 1,000 numbers in range 1-10,000,000 would allocate a huge array C mostly filled with zeros <br>
+    - Only works with integers or discrete values within known range <br>
+Best for: <br>
     - Small ranges of integers, or when stable sorting is needed
 
 - **Best case:** O(n + k) (Counting sort always counts and place elements, independent of input distribution)
