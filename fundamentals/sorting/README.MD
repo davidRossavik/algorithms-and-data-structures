@@ -113,6 +113,7 @@ The algorithm works by sorting numbers **digit by digit**, starting from the lea
 Notes:
 - Works efficiently when the number of digits is small compared to the number of elements
 - Useful for sorting integers, strings of equal length or fixed-size keys
+<br> ---
 
 - **Best case:** O(n * k) (processes each of the n element for each of the k digits)
 - **Average case:** O(n * k)
@@ -120,3 +121,27 @@ Notes:
 - **Space complexity:** O(n + base)  (auxiliary arrays used in Counting sort for each digit (output array + count array)) (Same space is reused for each digit, so we dont multiply by k)
 - **Stable:** Yes
 - **In-place:** No (requires additional arrays)
+
+<br>
+
+# Bucket Sort
+
+Bucket sort is a stable sorting algorithm. <br>
+It uses a stable subroutine, Insertion Sort, for the sorting-part.
+
+The algorithm assumes that the input is a list of numbers between 0 and 1. It then creates n buckets, and distributes the numbers in their corresponing bucket (by value). The individual buckets is sorted by Insertion Sort, and then concatenated back to the original list.
+
+Notes:
+- Pseudo-code uses n=length(A), but you could use n=sqrt(length(A)) or n = length(A) // k depending on how various you think the values are distributed
+<br> ---
+
+- **Best case:** O(n)  (if elements are uniformly distributed and buckets are small (Insertion sort fast))
+- **Average case:** O(n)  (if numbers evenly distributed)
+- **Wost case:** O(n^2)  (all numbers in same bucket)
+- **Space complexity:** O(n)  (extra space for the buckets)
+- **Stable:** No  (Can make stable tho) (Insertion Sort stable, concatenating not always in order)
+- **In-place:** No  (requires additional arrays)
+
+<br>
+
+
