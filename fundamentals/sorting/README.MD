@@ -82,7 +82,7 @@ It then recursively sorts the sublist and combines them with the pivot in the mi
 
 # Counting Sort
 
-Counting sort is a non-comparison-based sorting algorithm
+Counting sort is a non-comparison-based sorting algorithm.
 Effective for sorting integers when the values are within a limited range 0 to k.
 
 The algorithm works by counting how many times each value occurs and then using this count to place each element directly in its correct position. To maintain stabilit, it processes the input array from right to left when placing elements.
@@ -102,3 +102,21 @@ Best for: <br>
 - **In-place:** No (requires additional arrays)
 
 <br>
+
+# Radix Sort
+
+Radix sort is a non-comparison-based, stable sorting algortihm. <br>
+It uses a stable subroutine like Counting Sort, ensuering that the relative order of numbers with the same digit is preserved.
+
+The algorithm works by sorting numbers **digit by digit**, starting from the least significant digit to the most significant digit. It uses a stable sorting algorithm for sorting each digit.
+
+Notes:
+- Works efficiently when the number of digits is small compared to the number of elements
+- Useful for sorting integers, strings of equal length or fixed-size keys
+
+- **Best case:** O(n * k) (processes each of the n element for each of the k digits)
+- **Average case:** O(n * k)
+- **Wost case:** O(n * k)
+- **Space complexity:** O(n + base)  (auxiliary arrays used in Counting sort for each digit (output array + count array)) (Same space is reused for each digit, so we dont multiply by k)
+- **Stable:** Yes
+- **In-place:** No (requires additional arrays)
