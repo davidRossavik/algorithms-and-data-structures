@@ -7,8 +7,14 @@ Needs a stable rubroutine for sorting (Insertion sort here).
 Notes:
     - Uses insertion sort (because it is almost sorted in buckets)
     - Stable sorting algorithm
-    - Pros: Can achieve linear running time O(n) if numbers are evenly distributed and numbers of buckets is appropriate
-    - Cons: Demands input from 0-1, can get ineffective if numbers are unevenly distributed and all numbers end in one bucket (Insertion sort)
+    - Pros: 
+        Can achieve linear running time O(n) if numbers are evenly distributed and numbers of buckets is appropriate
+        No predecided size: Each bucket is a dynamic list
+        Memory efficient: Only buckets with elements allocates space
+        Simple implementation
+    - Cons: 
+        Demands input from 0-1
+        can get ineffective if numbers are unevenly distributed and all numbers end in one bucket (Insertion sort)
 
 The main idea:
     1. Assumes all input numbers are evenly distributed between 0-1

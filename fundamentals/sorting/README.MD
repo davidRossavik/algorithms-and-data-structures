@@ -144,4 +144,32 @@ Notes:
 
 <br>
 
+# Randomized Select
 
+Randomized Select (also called Quickselect) is a searching algorithm <br>
+It uses a subroutine, Randomized Partition, to speed up the search process.
+
+It is used to fint the i-th smallest element in an unsorted list, without having to sort the entire list. It uses Randomized Partition to randomly choose a pivot and split the list in two halves divided by the value relative to pivot.
+
+Notes:
+    - Based on Quicksort, but only uses recursion on one part of the list
+    - Useful when:
+        We need a spesific element (For example: mean value)
+        Dont want to sort the entire array
+        Can tolerate some variation in running time
+        Small extra memory (in place)
+    - Bad algorithm when:
+        Need many order statistics (then sorting is better)
+        Need a garuanteed worst-case running time
+        Need stability
+
+<br> ---
+
+- **Best case:** O(n)  
+- **Average case:** O(n)
+- **Wost case:** O(n^2) (Pivot divides poorly)
+- **Space complexity:** O(log n) recursion depth in average
+- **Stable:** No 
+- **In-place:** Yes
+
+<br>
