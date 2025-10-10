@@ -152,16 +152,16 @@ It uses a subroutine, Randomized Partition, to speed up the search process.
 It is used to fint the i-th smallest element in an unsorted list, without having to sort the entire list. It uses Randomized Partition to randomly choose a pivot and split the list in two halves divided by the value relative to pivot.
 
 Notes:
-    - Based on Quicksort, but only uses recursion on one part of the list
-    - Useful when:
-        We need a spesific element (For example: mean value)
-        Dont want to sort the entire array
-        Can tolerate some variation in running time
-        Small extra memory (in place)
-    - Bad algorithm when:
-        Need many order statistics (then sorting is better)
-        Need a garuanteed worst-case running time
-        Need stability
+- Based on Quicksort, but only uses recursion on one part of the list
+- Useful when:
+    - We need a spesific element (For example: mean value)
+    - Dont want to sort the entire array
+    - Can tolerate some variation in running time (random pivot = risc   for bad results)
+    - Small extra memory (in place)
+- Bad algorithm when:
+    - Need many order statistics (then sorting is better)
+    - Need a garuanteed worst-case running time
+    - Need stability
 
 <br> ---
 
@@ -173,3 +173,33 @@ Notes:
 - **In-place:** Yes
 
 <br>
+
+## Select (Median of Medians)
+
+Select is a searching algorithm. <br>
+Its purpose is to find the k-th smallest element in an unsorted list, without sorting the entire list, using a pivot chosen in a deterministic way to guarantee good splits.
+
+Similar to Randomized Select, but instead of choosing random pivot, it calculates the median of medians to ensure balances partitions
+
+Notes:
+- Guarantees worst-case linear running time O(n)
+- Useful when:
+    - can tolerate extra computation to find a good picot
+    - predictable running time
+- Bad algotihm when:
+    - need many order statistics
+    - we want simple, fast average-case solution
+    - need stability
+<br> ---
+
+- **Best case:** O(n)
+- **Average case:** O(n)
+- **Wost case:** O(n)
+- **Space complexity:** O(n)
+- **Stable:** No 
+- **In-place:** No
+
+<br>
+
+
+
