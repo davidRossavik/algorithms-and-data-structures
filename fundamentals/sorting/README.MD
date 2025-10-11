@@ -1,5 +1,18 @@
 ## Fundamentals - Guide
 
+| Algoritme          | Best Case    | Average Case | Worst Case   | Stabil | In-place |
+| ------------------ | ------------ | ------------ | ------------ | ------ | -------- |
+| **Insertion Sort** | Θ(n)         | Θ(n²)        | Θ(n²)        |   ✅  |   ✅     |
+| **Merge Sort**     | Θ(n log n)   | Θ(n log n)   | Θ(n log n)   |   ✅  |   ❌     |
+| **Heap Sort**      | Θ(n log n)   | Θ(n log n)   | Θ(n)         |   ❌  |   ✅     |
+| **Quick Sort**     | Θ(n log n)   | Θ(n log n)*  | Θ(n²)        |   ❌  |   ✅     |
+| **Counting Sort**  | Θ(n + k)     | Θ(n + k)     | Θ(n + k)     |   ✅  |   ❌     |
+| **Radix Sort**     | Θ(d·(n + k)) | Θ(d·(n + k)) | Θ(d·(n + k)) |   ✅  |   ❌     | 
+| **Bucket Sort**    | Θ(n)         | Θ(n    )     | Θ(n²)        |   ✅  |   ❌     |
+
+
+
+
 # Bubble Sort
 
 Bubble Sort repeatedly compares adjacent elements and swaps them if they are in the wrong order.  
@@ -201,5 +214,17 @@ Notes:
 
 <br>
 
+# Heap Sort
 
+Heap Sort is an sorting algorithm, based on heaps.
+It uses Max-Heapify and Build-Max-Heap to repair the Max-Heap after removing its root-node for sorting.
+
+The algorithm works by arranging the input-array as a heap, then using heap-operations to rearrange the maximum value to the root. When the maximum value is at the root, it puts it at the back of the array and makes the heap one index smaller. 
+
+- **Best case:** O(n) (if array is already max-heap. then Max_Heapify runs in O(1))
+- **Average case:** O(n*log n) (sort each index n with an Max_heapify that takes O(logn) time)
+- **Wost case:** O(n*logn)
+- **Space complexity:** O(logn)
+- **Stable:** No 
+- **In-place:** Yes
 
