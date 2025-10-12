@@ -111,7 +111,65 @@ For a given key `k`:
 Iterative search:
 Same logic as over, but implementer with a `while-loop` instead
 
+<br>
 
+# Heaps
+
+### Overview
+A **heap** is an almost complete binary-tree-structure that fullfills the **heap-properties**:
+- In a **max-heap**: value of each node is **>=** value to the children (root always the biggest)
+- In a **min-heap**: value of each node is **<** value to the children (root always the smallest)
+
+### Binary heap and array-representation
+The heap is a *complete binarytree*, so it can be represented in an array:
+
+For a node with index `i`:
+- left(i) = 2 * i (+ 1)
+- right(i) = 2 * i + 1 (+1)
+- parent(i) = (i (-1)) // 2
+
+This makes the heap very effective to implement
+
+# Priorityqueue
+
+### Overview
+A priorityqueue is an abstract datastructure that handles elements with *priorities*
+
+### Operations you can do
+- **insert** elements (INSERT)
+- **Get the element with highest priority** (EXTRACT-MAX)
+- **look at highest priority without removing** (MAXIMUM)
+- **increase priority to an elemnt** (INCREASE-KEY)
+
+| Operation     | Complexity |
+|---------------|------------|
+| `MAXIMUM`     | O(1)       |
+| `EXTRACT-MAX` | O(log n)   |
+| `INSERT`      | O(log n)   |
+| `INCREASE-KEY`| O(log n)   |
+
+## Applications
+- CPU job queues
+- Network routing (Dijkstra’s algorithm)
+- Implementation of heapsort
+
+## Visualization (Max-heap)
+```mermaid
+graph TD
+    A((16)):::root
+    A --> B((14)):::left
+    A --> C((10)):::right
+    B --> D((8))
+    B --> E((7))
+    C --> F((9))
+    C --> G((3))
+    D --> H((2))
+    D --> I((4))
+
+    classDef root fill:#ff6b6b,stroke:#333,stroke-width:2px,color:#fff
+    classDef left fill:#4ecdc4,stroke:#333,stroke-width:2px,color:#fff
+    classDef right fill:#45b7d1,stroke:#333,stroke-width:2px,color:#fff
+``` 
 
 
 
