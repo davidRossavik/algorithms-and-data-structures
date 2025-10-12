@@ -22,11 +22,8 @@ class rooted_tree:
         new_child.parent = parent
         parent.children.append(new_child)
         return new_child
-
-
-
-# Make a root and some children
-
+    
+    
 
 def print_tree(node, level=0):
     print("  " * level + str(node.key))
