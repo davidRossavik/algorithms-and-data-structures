@@ -48,5 +48,40 @@ There are two main approaches:
 
 <br>
 
+## Knapsack (0/1 and Unbounded)
+
+Knapsack is an optimization problem that uses dynamic programming to reduce the running time from exponential time to polynomial time.
+
+The algorithm builds a 2D DP table, where each cell represents the maximum total value achievable using the first i items with a remaining capacity w.
+
+The recurive version (Top-Down) mirros this logic by calling itself with smaller subproblems. Reduces to polynomial time by using memoization <br>
+The iterative version (Bottom-Up) fills the DP table row by row. Reduces to polynomial time by checking previous calculated cells. <br>
+
+There are two main variants:
+- 0/1 Knapsack: Each item can be chosen at most once
+- Unbounded Knapsack: Each item can be chosen any number of times
+<br>
+
+Implementations included:
+- Recursive Top-Down (Memoized): stores intermediate results in dp[i][w]
+- Iterative Bottom-Up: fills table row-by-row
+- Choice Reconstruction: builds a seperate choices table to retrieve which items were included
+<br>
+
+IMPORTANT NOTE ABOUT RUNNING TIME:
+- Knapsack is pseudopolynomial but exponential in the input-size
+- The input-size (number of bits) is growing slow (logarithmic)
+- The running time is growing fast (linear with W)
+- Even if input-size (bits) only increases a little, the running time can increase enourmosly because W is so much bigger
+- The algorithm is polynomial in a function of W, but exponential in a function of the size of W
+
+- **Average/Worst case**: O(n·W) / O(n*2^(m))
+- **Space Complexity**: O(n·W)
+- **Stable**: Not applicable (n/a)
+- **In-place**: No (requires DP tables)
+
+<br>
+
+
 
 
