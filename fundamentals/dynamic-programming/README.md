@@ -82,6 +82,22 @@ IMPORTANT NOTE ABOUT RUNNING TIME:
 
 <br>
 
+### Rod-cut
+
+Rod cutting is a classic dynamic programming optimization problem. <br>
+The goal is to determine the maximum revenue obtainable by cutting a rod of length n into smaller pieces and selling them according to a given price list
+
+At each length n, we have two choices:
+- Cut the rot at posision i and solve the subproblem for the remaining length n-i
+- Do not cut further (keep as is)
+
+Because there are many overlapping subproblems (computing best price for smaller lengths multiple times), a naive recursive approach leads to exponential time complexity. Dynamic Programming solves this by storing already computed results - either top-down (memoization) or bottom-up (tabulation)
+
+- Recursive (Exponential): Tries all possible cuts
+- Top-Down (Memoized): Saves results for each sub-length
+- Bottom-Up (Iterative): Builds optimal revenue for all lengths from 1..n
+
+<br>
 
 
 

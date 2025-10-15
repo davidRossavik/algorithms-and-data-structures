@@ -26,10 +26,10 @@ The main idea (Recursive Top-Down):
 
 
 Time Complexity:
-    - 
+    - O(n*W) OR REALLY O(n*2^m)
 
 Space Complexity:
-    - 
+    - O(n*W)
 
 Author: David
 Date: 13-10-2025
