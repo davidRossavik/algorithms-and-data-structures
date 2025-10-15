@@ -13,10 +13,10 @@ The main idea:
     1. 
 
 Time Complexity:
-    -    
+    -    O(n*W)
 
 Space Complexity:
-    -
+    - O(n*W)
 
     
 Author: David

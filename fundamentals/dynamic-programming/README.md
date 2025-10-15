@@ -20,7 +20,7 @@ DP is used when:
 | Filnavn | Beskrivelse |
 |----------|--------------|
 | `fibonacci_memo.py` | Top-Down DP med memoization |
-| `rod_cutting.py` | Klassisk bottom-up-stavkutting |
+| `rod_cut.py` | Klassisk bottom-up-stavkutting |
 | `knapsack.py` | 0/1 Knapsack bottom-up DP |
 | `lcs.py` | Longest Common Subsequence med 2D-tabell |
 | `coin_change.py` | Minste antall mynter for et beløp |
@@ -98,6 +98,12 @@ Because there are many overlapping subproblems (computing best price for smaller
 - Bottom-Up (Iterative): Builds optimal revenue for all lengths from 1..n
 
 <br>
+Extra: 
 
+- Average/Worst case: O(n·W)
+- Space Complexity: O(n·W)
+- Stable: Not applicable (n/a)
+- In-place: No (requires DP tables)
 
+<br>
 
