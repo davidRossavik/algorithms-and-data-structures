@@ -14,10 +14,10 @@ The main idea:
       also can choose the activity that ends first
 
 Time Complexity:
-    - 
+    - O(n*logn)
 
 Space Complexity:
-    - 
+    - Storing of start/end-time: O(n)
 
 Author: David
 Date: 16-10-2025
@@ -25,12 +25,12 @@ Date: 16-10-2025
 
 def activity_selection(activites):
     # Sort the activites by finish time
-    activites.sort(key=lambda x: x[1])
+    activites.sort(key=lambda x: x[1])  #O(n lgn)
 
     selected = []
     last_finish = 0
 
-    for start, finish in activites:
+    for start, finish in activites:     #O(n)
         if start >= last_finish: # Checks that the starttime is after last_endtime
             selected.append((start, finish))
             last_finish = finish
