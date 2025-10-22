@@ -120,8 +120,6 @@ def generate_codes(node, current_code="", codes=None):
     return codes
 
 
-
-
 if __name__ == "__main__":
     char_freqs = [('a', 5), ('b', 9), ('c', 12), ('d', 13), ('e', 16), ('f', 45)]
     root = build_huffman_tree(char_freqs)
