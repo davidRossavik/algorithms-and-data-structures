@@ -1,8 +1,7 @@
 """
-traversing_classic.py
+dfs.py
 ----------------------
-Implementation of the fundamental traversingalgorithm for graphs in Python.
-This graph creates the foundation for DFS and BFS (dept/breadth-first search).
+Implementation of the fundamental traversingalgorithm DFS for graphs in Python.
 
 The main idea:
     1. A traversal will visit all the nodes that can be reached from a startnode u
