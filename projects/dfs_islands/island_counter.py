@@ -30,7 +30,7 @@ def print_map(grid):
         print(" ".join("🟩" if cell == 1 else "🟦" for cell in row))
 
 if __name__ == "__main__":
-    filename = r"C:\NTNU\3. Semester - Høst 25\ALG-DAT\algorithms-and-data-structures\projects\dfs_islands\example_grids\complex.txt"
+    filename = r"C:\NTNU\3. Semester - Høst 25\ALG-DAT\algorithms-and-data-structures\projects\dfs_islands\example_grids\small.txt"
     graph = read_map_from_file(filename)
     print(" -------- MAP ---------------")
     print()
