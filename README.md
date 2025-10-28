@@ -26,12 +26,12 @@ It combines both **theoretical exercises** (like sorting, dynamic programming, a
 
 ## Example Projects
 
-| Project          | Description                                    | Concepts Used                  |
-| ---------------- | ---------------------------------------------- | ------------------------------ |
-| `PathFinder`     | Finds shortest paths between points on a map   | Dijkstra, A*, graphs           |
-| `SortLab`        | Compares runtime of various sorting algorithms | QuickSort, MergeSort, HeapSort |
-| `TreeVisualizer` | Interactive visualization of binary trees      | Trees, recursion               |
-| `GameAI`         | Simple AI for board games using search trees   | Minimax, pruning               |
+| Project                      | Description                                      | Concepts Used                  |
+| ---------------------------- | ------------------------------------------------ | ------------------------------ |
+| `PathFinder`                 | Finds shortest paths between points on a map     | Dijkstra, A*, graphs           |
+| `SortLab`                    | Compares runtime of various sorting algorithms   | QuickSort, MergeSort, HeapSort |
+| `TreeVisualizer`             | Interactive visualization of binary trees        | Trees, recursion               |
+| `Mutual module dependencies` | Finding circular module dependencies in a project| DFS, SCC, Kosarajus            |
 
 ---
 
