@@ -14,7 +14,7 @@ The main idea:
     7. Results: a new matrix that tells you the shortest path from i to j with one edge more than before
 
 Time Complexity:
-    - 
+    - O(n^3)
 
 Author: David
 Date: 13-11-2025
