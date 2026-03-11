@@ -23,8 +23,16 @@ Written in Python.
 |---|---|
 | `scc_module_dependency/` | Finds circular dependencies between modules using Kosaraju's SCC |
 | `dfs_islands/` | Counts islands in a grid using DFS |
-| `packing-assistant/` | Knapsack-based packing helper |
+| `packing_assistant/` | Knapsack-based packing helper |
 
 ---
 
-Tests live in `tests/`.
+Screenshots of projects
+
+### DFS Islands
+
+![DFS Islands](assets/dfs_islands.png)
+
+### Packing Assistant
+
+![Packing Assistant](assets/packing_assistant.png)
