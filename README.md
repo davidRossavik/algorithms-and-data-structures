@@ -1,71 +1,30 @@
 # Algorithms and Data Structures
 
-This repository is a personal learning and practice space for algorithms and data structures.
-It combines both **theoretical exercises** (like sorting, dynamic programming, and trees) and **practical projects** that apply these concepts to real-world inspired problems.
+Personal implementations from TDT4120 at NTNU, plus a couple of small applied projects.
+Written in Python.
 
 ---
 
-## Goals
+## fundamentals/
 
-* Strengthen algorithmic thinking and problem-solving skills.
-* Practice writing clean, well-documented, and tested code.
-* Explore how data structures and algorithms are applied in real systems.
-* Very limited / No AI use
+| Topic | Implementations |
+|---|---|
+| `sorting/` | Bubble, insertion, merge, quick, heap, counting, bucket, radix, randomized select |
+| `graphs/` | BFS, DFS, Kosarajus, Kruskal, Ford-Fulkerson (Edmonds-Karp) |
+| `graphs/shortest_path_from_one_to_all/` | Dijkstra, Bellman-Ford, DAG shortest path |
+| `graphs/shortest_path_all_to_all/` | Slow/fast APSP, Floyd-Warshall, transitive closure |
+| `trees/` | BST, max-heap, rooted tree, first-child-next-sibling |
+| `dynamic-programming/` | Fibonacci, knapsack, LCS, rod cutting, coin change |
+| `greedy-algorithms/` | Activity selection, fractional knapsack, Huffman coding |
 
----
+## projects/
 
-## Structure
-
-| Folder          | Description                                                                                 |
-| --------------- | ------------------------------------------------------------------------------------------- |
-| `fundamentals/` | Smaller examples focusing on core concepts (sorting, recursion, dynamic programming, etc.). |
-| `projects/`     | Larger applications that apply algorithms to practical problems.                            |
-| `tests/`        | Unit tests for selected implementations.                                                    |
-
----
-
-## Example Projects
-
-| Project                      | Description                                      | Concepts Used                  |
-| ---------------------------- | ------------------------------------------------ | ------------------------------ |
-| `PathFinder`                 | Finds shortest paths between points on a map     | Dijkstra, A*, graphs           |
-| `SortLab`                    | Compares runtime of various sorting algorithms   | QuickSort, MergeSort, HeapSort |
-| `TreeVisualizer`             | Interactive visualization of binary trees        | Trees, recursion               |
-| `Mutual module dependencies` | Finding circular module dependencies in a project| DFS, SCC, Kosarajus            |
+| Project | Description |
+|---|---|
+| `scc_module_dependency/` | Finds circular dependencies between modules using Kosaraju's SCC |
+| `dfs_islands/` | Counts islands in a grid using DFS |
+| `packing-assistant/` | Knapsack-based packing helper |
 
 ---
 
-## Languages Used
-
-This repository includes implementations mainly in **Python**.
-
----
-
-## How to Run
-
-Each subproject contains its own `README.md` with:
-
-* Problem description
-* Algorithm explanation
-* How to run the code
-* Example input/output
-
----
-
-## Learning Log
-
-I'm currently studying *TDT4120 - Algorithms and Data Structures* at NTNU.
-This repository reflects the topics covered in the course — extended with personal explorations and experiments.
-
----
-
-## Future Ideas
-
-* Implement visualization of dynamic programming states
-* Build a small web interface for algorithm animations
-* Explore parallel sorting algorithms
-* Compare recursive vs iterative approaches
-
----
-
-**Feel free to explore, fork, or suggest improvements!**
+Tests live in `tests/`.
