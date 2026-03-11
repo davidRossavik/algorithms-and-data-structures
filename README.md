@@ -36,3 +36,7 @@ Screenshots of projects
 ### Packing Assistant
 
 ![Packing Assistant](assets/packing_assistant.png)
+
+### Huffman coding
+
+![Huffman Coding](assets/huffman_coding.png)
