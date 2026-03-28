@@ -15,7 +15,7 @@ Written in Python.
 | `graphs/shortest_path_all_to_all/` | Slow/fast APSP, Floyd-Warshall, transitive closure |
 | `trees/` | BST, max-heap, rooted tree, first-child-next-sibling |
 | `dynamic-programming/` | Fibonacci, knapsack, LCS, rod cutting, coin change |
-| `greedy-algorithms/` | Activity selection, fractional knapsack, Huffman coding |
+| `greedy-algorithms/` | Activity selection, Huffman coding |
 
 ## projects/
 
